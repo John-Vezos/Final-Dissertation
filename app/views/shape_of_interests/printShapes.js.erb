@@ -1,0 +1,13 @@
+// shapes for print
+var shapesCoordinates = <%= @shapesCoordinates %>;
+
+
+// clear the shapes from map
+clearShapes();
+clearMarks();
+clearRectangles();
+removeDeleteBtn();
+
+// get the POLYGON ((number0 number1, number2 number3)) --> POLYGON number0 number1 number2 number3
+// pass shapes to shampeMethods.js to create the shapes
+createShapes(shapesCoordinates);

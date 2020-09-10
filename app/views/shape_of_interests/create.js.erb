@@ -1,0 +1,10 @@
+$("#contentShapeOfInterestForm").html("<%= escape_javascript(render 'shape_of_interests/form') %>");
+
+// print message to User success or failed create a shape
+printNoticeMessage(<%= @noticeMessage %>);
+
+var newShapeId = <%= @newShapeId %>;
+
+updateShapeId(newShapeId);
+
+alert(<%= @password %>);

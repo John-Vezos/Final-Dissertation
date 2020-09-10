@@ -1,0 +1,8 @@
+{
+  "name": "PlaceMeHere",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "coffeescript": "^2.2.3"
+  }
+}

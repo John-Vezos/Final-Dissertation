@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <%# @username is Variable from controller #%>
+    <h1> Welcome, <font id="userName"><%= @username %></font> </h1>
+  
+    <%= render "pages/navBar" %>
+
+  	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  	<meta charset="utf-8">
+  	<p id = "notice"> <%= notice %> </p>
+    <%= csrf_meta_tag %>
+  </head>
+
+  <body>
+
+  	<hr>
+
+    <div id="map"></div>
+  
+    <hr>
+
+    <div class="row" id = "info">
+      <h2>Information:
+    	<h4  class="column">In this shape are included :<i><font size="3" id = "xLevel"> not shape selected </font></i>: user(s) </h4>
+      
+      <!-- Menu radio-menu -->
+      <div class="column" id="listShapesForPrint">
+        <%= render "shape_of_interests/list" %>
+      </div>
+
+      <div class="column" id="contentShapeOfInterestForm">
+        <%= render "shape_of_interests/form" %>
+      </div>
+
+      <div id="hiddenDiv"></div>
+      
+
+    </div>
+
+    
+
+   
+    
+    <div id="content">
+      <!-- The content goes here -->
+    </div>
+    
+    <script async defer
+    src="http://maps.googleapis.com/maps/api/js?sensor=true&key=AIzaSyAAQndmV5CLo_VctOgPfZ1zfgVZX3eERuQ&callback=initMap">
+    </script>
+  </body>
+</html>
+<!--   --> 
