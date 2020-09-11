@@ -1,6 +1,6 @@
 #Place me here
 
-## This project counting automatic people in point of interests.
+## This project counting automatic users in point of interests.
 ###### Users can create a point of interest and resize it in the Map (Google Maps API).
 ###### Then the application automatic counting all the users who included in this map and add them in a database.
 ###### User can select a point of interest and get insta feedback how many users included there.
